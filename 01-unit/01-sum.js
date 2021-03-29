@@ -50,9 +50,14 @@ try {
  //-------------------------------------------------
  // When invoked with a character, it should return 0.
 	 var result = sum('b', 1);
-	 if (result !== 0) throw new Error('Expected sum(b, 1) to be 1. Received: ' + result);
+	 if (result !== 0) throw new Error('Expected sum(b, 1) to be 0. Received: ' + result);
 
-
+//------------------------------------------------------
+//Test case 6
+//------------------------------------------------------
+//When invoked with 2 character, it should return 0, according to the sum function
+	var result = sum('a', 'z');
+	if (result !== 0) throw new Error('Expected sum(a, z) to be 0. Received: ' + result);
 	
 	console.log('All tests passed successfully.');
 
