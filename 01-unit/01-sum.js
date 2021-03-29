@@ -59,8 +59,14 @@ try {
 	var result = sum('a', 'z');
 	if (result !== 0) throw new Error('Expected sum(a, z) to be 0. Received: ' + result);
 	
+//------------------------------------------------------
+//Test case 7
+//------------------------------------------------------
+//When invoked with 1 special character, it should return 0, according to the sum function
+	       var result = sum('a', 'z');
+	       if (result !== 0) throw new Error('Expected sum(a, z) to be 0. Received: ' + result);
+	
 	console.log('All tests passed successfully.');
-
 // ==================================================
 // PRINT ERRORS
 // ==================================================
