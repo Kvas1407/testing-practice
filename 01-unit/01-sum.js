@@ -67,7 +67,7 @@ try {
 	       if (result !== 0) throw new Error('Expected sum(a, z) to be 0. Received: ' + result);
 
 //------------------------------------------------------
-//Test case 6
+//Test case 8
 //------------------------------------------------------
 //When invoked with 2 special characters, it should return 0, according to the sum function
 	var result = sum('$', ')');
