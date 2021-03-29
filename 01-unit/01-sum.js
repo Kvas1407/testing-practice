@@ -2,7 +2,15 @@
 // DEFINE FUNCTION(S)
 // ===================================================
 function sum(int_1, int_2) {
-         return int_1+int_2;
+         
+
+if (!isNaN(int_1) && !isNaN(int_2))
+	{
+	return int_1+int_2;
+	} else
+	{
+	return 0;
+	}
 }
 
 // ==================================================
@@ -27,7 +35,7 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
-          var result = sum(1, null);
+          var result = sum(null, 1);
 	  if (result !== 1) throw new Error('Expected sum(1, null) to be 1. Received: ' + result);
  // --------------------------------------------------
   // Test Case 4
@@ -37,6 +45,15 @@ try {
 	  if (result !== 0) throw new Error('Expected sum(null, null) to be 0. Received: ' + result);
  
 
+//--------------------------------------------------
+  //Test case 5
+ //-------------------------------------------------
+ // When invoked with a character, it should return 0.
+	 var result = sum('b', 1);
+	 if (result !== 0) throw new Error('Expected sum(b, 1) to be 1. Received: ' + result);
+
+
+	
 	console.log('All tests passed successfully.');
 
 // ==================================================
