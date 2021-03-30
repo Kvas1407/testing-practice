@@ -20,8 +20,8 @@ try {
   // Test Case 1
   // --------------------------------------------------
   // It should return the product of two numbers.
-  var result = product(2, 2);
-  if (result !== 4) throw new Error('Expected product(2, 2) to be 4. Received: ' + result);
+  var result = product(1, 2);
+  if (result !== 2) throw new Error('Expected product(1, 2) to be 2. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
