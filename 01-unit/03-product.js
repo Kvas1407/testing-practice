@@ -27,7 +27,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return 0 when either of the numbers are 0.
-
+   var result = product(0, 1);
+   if (result !== 0) throw new Error('Expected product(0, 1) to be 0. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
