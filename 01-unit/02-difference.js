@@ -29,12 +29,14 @@ try {
   // It should ignore additional numbers.
 
   var result = difference(1, 1, 2, 3, 4, 5, 6, 7);
-  if (result !== 0) throw new Error('Expected sum(b, 1) to be 0. Received: ' + result);
+  if (result !== 0) throw new Error('Expected difference(1, 1, 2, 3, 4, 5, 6, 7) to be 0. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
 
+  var result = difference(1, null);
+	  if (result !== 1) throw new Error('Expected difference(1, null) to be 1. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
