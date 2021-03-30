@@ -64,6 +64,13 @@ try {
  //When invoked with 1 special character, it should return 0, according to the difference function
 	var result = difference('!', 1);
 	if (result !== 0) throw new Error('Expected difference(!, 1) to be 0. Received: ' + result);
+
+//------------------------------------------------------
+//Test case 8
+//------------------------------------------------------
+//When invoked with 2 special characters, it should return 0, according to the sum function
+        var result = difference('$', ')');
+        if (result !== 0) throw new Error('Expected difference($, )) to be 0. Received: ' + result);
 	
 	
   console.log('All tests passed successfully.');
