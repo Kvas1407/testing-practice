@@ -1,9 +1,16 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function product() {
+function product(int_1, int_2) {
 
-}
+	if (!isNaN(int_1) && !isNaN(int_2))
+	      {
+	      return int_1*int_2;
+	      } else
+	      {
+	      return 0;
+	      }
+	}
 
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
