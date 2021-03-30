@@ -64,14 +64,14 @@ try {
 //------------------------------------------------------
 //When invoked with 1 special character, it should return 0, according to the sum function
 	       var result = sum('!', '1');
-	       if (result !== 0) throw new Error('Expected sum(a, z) to be 0. Received: ' + result);
+	       if (result !== 0) throw new Error('Expected sum(!, 1) to be 0. Received: ' + result);
 
 //------------------------------------------------------
 //Test case 8
 //------------------------------------------------------
 //When invoked with 2 special characters, it should return 0, according to the sum function
 	var result = sum('$', ')');
-	if (result !== 0) throw new Error('Expected sum(a, z) to be 0. Received: ' + result);
+	if (result !== 0) throw new Error('Expected sum($, )) to be 0. Received: ' + result);
 
 
 	
