@@ -43,6 +43,13 @@ try {
   // When invoked with no numbers, it should return 0.
 	var result = difference(null, null);
 	if (result !== 0) throw new Error('Expected difference(null, null) to be 0. Received: ' + result);
+ //--------------------------------------------------
+
+ //Test case 5
+ //-------------------------------------------------
+ // When invoked with a character, it should return 0.
+	var result = difference('b', 1);
+	if (result !== 0) throw new Error('Expected difference(b, 1) to be 0. Received: ' + result);
 
   console.log('All tests passed successfully.');
 
