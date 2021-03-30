@@ -1,8 +1,15 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function difference() {
+function difference(int_1, int_2) {
 
+	if (!isNaN(int_1) && !isNaN(int_2))
+		        {
+		        return int_1-int_2;
+		        } else
+		        {
+		        return 0;
+		        }
 }
 
 // ==================================================
