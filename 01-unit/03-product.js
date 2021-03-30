@@ -33,6 +33,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
+  var result = product(1, 1, 2, 3, 4, 5, 6, 7);
+  if (result !== 1) throw new Error('Expected product(1, 1, 2, 3, 4, 5, 6, 7) to be 1. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
