@@ -28,6 +28,8 @@ try {
   // --------------------------------------------------
   // It should ignore additional numbers.
 
+  var result = difference(1, 1, 2, 3, 4, 5, 6, 7);
+  if (result !== 0) throw new Error('Expected sum(b, 1) to be 0. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
