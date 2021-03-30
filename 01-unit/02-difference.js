@@ -35,12 +35,14 @@ try {
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
 
-  var result = difference(1, null);
+          var result = difference(1, null);
 	  if (result !== 1) throw new Error('Expected difference(1, null) to be 1. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+	var result = difference(null, null);
+	if (result !== 0) throw new Error('Expected difference(null, null) to be 0. Received: ' + result);
 
   console.log('All tests passed successfully.');
 
