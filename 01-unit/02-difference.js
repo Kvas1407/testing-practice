@@ -57,6 +57,14 @@ try {
  //When invoked with 2 character, it should return 0, according to the difference function
 	var result = difference('k', 's');
 	if (result !== 0) throw new Error('Expected difference(k, s) to be 0. Received: ' + result);
+
+ //------------------------------------------------------
+ //Test case 7
+ //------------------------------------------------------
+ //When invoked with 1 special character, it should return 0, according to the difference function
+	var result = difference('!', 1);
+	if (result !== 0) throw new Error('Expected difference(!, 1) to be 0. Received: ' + result);
+	
 	
   console.log('All tests passed successfully.');
 
