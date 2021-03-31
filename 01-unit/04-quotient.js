@@ -9,10 +9,14 @@ function quotient(int_1, int_2) {
 	                return 'ERROR';
 			}else if (int_1 != 0 && int_2 == 0){
 			return 'ERROR';
-			} else if (int_1 == (null || undefined))
+			} else if (int_1 == (null || undefined) && int_2 != (null || undefined))
 	                {
 	                return 1;
-			}else if (!isNaN(int_1) && !isNaN(int_2))
+			} else if (int_1 == (null || undefined) && int_2 == (null || undefined))
+	                {
+			return 0;
+			}
+		        else if (!isNaN(int_1) && !isNaN(int_2))
 			{
 			return int_1 / int_2;
 			} else
@@ -61,8 +65,18 @@ var result = quotient(null, 1);
   // Test Case 6
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+var result = quotient(null, null);
+	if(result !==0) throw new Error('Expected quotient(null, null) to be 0. Received: ' + result);
 
-  console.log('All tests passed successfully.');
+//------------------------------------------------------
+//Test case 7
+//------------------------------------------------------
+//When invoked with 2 character, it should return 0, according to the function
+	        var result = quotient('a', 'z');
+	      if (result !== 0) throw new Error('Expected quotient(a, z) to be 0. Received: ' + result);
+
+console.log('All tests passed successfully.');
+
 
 // ==================================================
 // PRINT ERRORS
