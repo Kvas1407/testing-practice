@@ -18,6 +18,11 @@ function calc(operation, int_1, int_2) {
 	{
 		return int_1 * int_2;
 	}
+	function divide(int_1, int_2)
+	{
+		return int_1 / int_2;
+	}
+
 	switch (operation)
 	{
 		case 'add':
@@ -55,12 +60,12 @@ try {
   // --------------------------------------------------
   // It should return the correct product when the user provides: 'multiply', 9, 9.
   var result = calc('multiply', 9, 9);
-  if (result !== 81) throw new Error('Expected calc("multiply", 9, 9) to be 18. Received: ' + result);	
+  if (result !== 81) throw new Error('Expected calc("multiply", 9, 9) to be 81. Received: ' + result);	
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
   // It should return the correct quotient when the user provides: 'divide', 9, 3.
-
+ 
   // --------------------------------------------------
   // Test Case 5
   // --------------------------------------------------
