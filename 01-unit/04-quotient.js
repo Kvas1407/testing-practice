@@ -35,18 +35,24 @@ try {
  var result = quotient(1, 0);
 	if(result !== 'ERROR') throw new Error('Expected quotient(1,0) to be ERROR. Received: ' + result)
 
-  // --------------------------------------------------
-  // Test Case 3
+   // --------------------------------------------------
+   // Test Case 3
+    // --------------------------------------------------
+	// It should return the text 'ERROR' when the first number is 0.
+	var result = quotient(0, 1);
+	if(result !== 'ERROR') throw new Error('Expected quotient(0,1) to be ERROR. Received: ' + result)
+	
+	// Test Case 4
   // --------------------------------------------------
   // It should ignore additional numbers.
 
   // --------------------------------------------------
-  // Test Case 4
+  // Test Case 5
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
 
   // --------------------------------------------------
-  // Test Case 5
+  // Test Case 6
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
 
