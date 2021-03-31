@@ -2,10 +2,16 @@
 // DEFINE FUNCTION(S)
 // ==================================================
 function calc(operation, int_1, int_2) {
-switch (operation)
+
+	function sum(int_1, int_2)
+	{
+		return int_1 + int_2;
+	
+	}
+	switch (operation)
 	{
 		case 'add':
-		return (int_1 + int_2 );
+		return sum(int_1, int_2 );
 		
 		case 'subtract':
 			return (int_1 - int_2);
