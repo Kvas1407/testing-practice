@@ -2,13 +2,19 @@
 // DEFINE FUNCTION(S)
 // ==================================================
 function quotient(int_1, int_2) {
-if (!isNaN(int_1) && !isNaN(int_2))
-       {
-        return int_1/int_2;
-        } else
-        {
-        return 0;
-        }
+
+	if (int_1 == 0 && int_2 != 0)
+			{
+	                return 'ERROR';
+			}else if (int_1 != 0 && int_2 == 0){
+			return 'ERROR';
+			}else if (!isNaN(int_1) && !isNaN(int_2))
+			{
+			return int_1 / int_2;
+			} else
+			{
+			return 0;
+			}
 }
 
 // ==================================================
@@ -26,6 +32,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return the text 'ERROR' when the second number is 0.
+ var result = quotient(1, 0);
+	if(result !== 'ERROR') throw new Error('Expected quotient(1,0) to be ERROR. Received: ' + result)
 
   // --------------------------------------------------
   // Test Case 3
