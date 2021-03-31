@@ -24,13 +24,13 @@ function calc(operation, int_1, int_2) {
 		return sum(int_1, int_2 );
 		
 		case 'subtract':
-			return (int_1, int_2);
+			return subtract(int_1, int_2);
 
 		case 'multiply':
-			return (int_1, int_2);
+			return multiply(int_1, int_2);
 
 		case 'divide':
-			return (int_1, int_2);
+			return divide(int_1, int_2);
 }
 }
 // ==================================================
@@ -54,7 +54,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // It should return the correct product when the user provides: 'multiply', 9, 9.
-
+  var result = calc('multiply', 9, 9);
+  if (result !== 81) throw new Error('Expected calc("multiply", 9, 9) to be 18. Received: ' + result);	
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
