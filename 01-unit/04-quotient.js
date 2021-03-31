@@ -9,6 +9,9 @@ function quotient(int_1, int_2) {
 	                return 'ERROR';
 			}else if (int_1 != 0 && int_2 == 0){
 			return 'ERROR';
+			} else if (int_1 == (null || undefined))
+	                {
+	                return 1;
 			}else if (!isNaN(int_1) && !isNaN(int_2))
 			{
 			return int_1 / int_2;
@@ -46,13 +49,15 @@ try {
 	// Test Case 4
   // --------------------------------------------------
   // It should ignore additional numbers.
-
-  // --------------------------------------------------
+var result = quotient(1, 1, 2, 3, 4, 5, 6, 7);
+	  if (result !== 1) throw new Error('Expected quotient(1, 1, 2, 3, 4, 5, 6, 7) to be 1. Received: ' + result);
+ // --------------------------------------------------
   // Test Case 5
-  // --------------------------------------------------
-  // When invoked with only 1 number, it should return that number.
-
-  // --------------------------------------------------
+  // -------------------------------------------------
+// When invoked with only 1 number, it should return that number.
+var result = quotient(null, 1);
+	if (result !==1) throw new Error('Expected quotient(1, null) to be 1. Received: ' + result);
+// --------------------------------------------------
   // Test Case 6
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
