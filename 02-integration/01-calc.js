@@ -14,6 +14,10 @@ function calc(operation, int_1, int_2) {
 		return int_1 - int_2;
 	}
 
+	function multiply(int_1, int_2)
+	{
+		return int_1 * int_2;
+	}
 	switch (operation)
 	{
 		case 'add':
