@@ -77,6 +77,13 @@ var result = product(1, 0);
 //When invoked with 1 special character, it should return 0, according to the function
          var result = product('!', '1');
                    if (result !== 0) throw new Error('Expected product(!, 1) to be 0. Received: ' + result);
+
+//------------------------------------------------------
+//Test case 9
+//------------------------------------------------------
+//When invoked with 2 special characters, it should return 0, according to the function
+      var result = product('$', '&');
+	if (result !== 0) throw new Error('Expected product($, &) to be 0. Received: ' + result);
 	
 	
 	
