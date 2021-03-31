@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-<<<<<<< HEAD
+
 function quotient(int_1, int_2) {
 
 	if (int_1 == 0 && int_2 != 0)
@@ -16,16 +16,6 @@ function quotient(int_1, int_2) {
 			{
 			return 0;
 			}
-=======
-function quotient() {
-if (!isNaN(int_1) && !isNaN(int_2))
-       {
-        return int_1+int_2;
-        } else
-        {
-        return 0;
-        }
->>>>>>> 3b4b726e192d95ada93d54b722513733c10572e3
 }
 
 // ==================================================
