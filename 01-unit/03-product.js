@@ -63,6 +63,17 @@ var result = product(1, 0);
   var result = product('b', 1);
 	         if (result !== 0) throw new Error('Expected product(b, 1) to be 0. Received: ' + result);
 	
+
+//------------------------------------------------------
+//Test case 7
+//------------------------------------------------------
+//When invoked with 2 character, it should return 0, according to the sum function
+        var result = product('a', 'z');
+               if (result !== 0) throw new Error('Expected product(a, z) to be 0. Received: ' + result);
+	
+	
+	
+	
 	console.log('All tests passed successfully.');
 
 // ==================================================
