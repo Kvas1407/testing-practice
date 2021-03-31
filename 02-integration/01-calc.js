@@ -1,10 +1,22 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
+function calc(operation, int_1, int_2) {
+switch (operation)
+	{
+		case 'add':
+		return (int_1 + int_2 );
+		
+		case 'subtract':
+			return (int_1 - int_2);
 
+		case 'multiply':
+			return (int_1 * int_2);
+
+		case 'divide':
+			return (int_1 / int_2);
 }
-
+}
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
 // ==================================================
