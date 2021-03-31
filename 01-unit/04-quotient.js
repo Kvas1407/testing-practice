@@ -75,7 +75,15 @@ var result = quotient(null, null);
 	        var result = quotient('a', 'z');
 	      if (result !== 0) throw new Error('Expected quotient(a, z) to be 0. Received: ' + result);
 
-console.log('All tests passed successfully.');
+//------------------------------------------------------
+//Test case 8
+//------------------------------------------------------
+//When invoked with 2 special characters, it should return 0, according to the function
+	 var result = quotient('$', '&');
+	 if (result !== 0) throw new Error('Expected quotient($, &) to be 0. Received: ' + result);
+	
+	
+	console.log('All tests passed successfully.');
 
 
 // ==================================================
