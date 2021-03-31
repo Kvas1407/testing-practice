@@ -38,7 +38,7 @@ function calc(operation, int_1, int_2) {
 			return divide(int_1, int_2);
 
 		default:
-			return 'Invalid Operation.Better luck next time'
+			return 'Invalid Operation. Better luck next time'
 }
 }
 // ==================================================
@@ -74,7 +74,8 @@ try {
   // Test Case 5
   // --------------------------------------------------
   // It should return the message 'Operation not supported.' when the user provides: exponent, 2, 8.
-
+  var result = calc('exponent', 2, 8)
+  if(result !== 'Invalid Operation. Better luck next time') throw new Error('Expected calc("exponent", 2, 8) to be "Invalid Operation. Better luck next time". Received: ' + result);
   console.log('All tests passed successfully.');
 
 // ==================================================
