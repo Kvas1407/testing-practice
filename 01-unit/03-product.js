@@ -72,7 +72,7 @@ var result = product(1, 0);
                if (result !== 0) throw new Error('Expected product(a, z) to be 0. Received: ' + result);
 
 //------------------------------------------------------
-//Test case 7
+//Test case 8
 //------------------------------------------------------
 //When invoked with 1 special character, it should return 0, according to the function
          var result = product('!', '1');
