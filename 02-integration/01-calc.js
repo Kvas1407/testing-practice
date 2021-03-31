@@ -8,19 +8,20 @@ function calc(operation, int_1, int_2) {
 		return int_1 + int_2;
 	
 	}
+
 	switch (operation)
 	{
 		case 'add':
 		return sum(int_1, int_2 );
 		
 		case 'subtract':
-			return (int_1 - int_2);
+			return (int_1, int_2);
 
 		case 'multiply':
-			return (int_1 * int_2);
+			return (int_1, int_2);
 
 		case 'divide':
-			return (int_1 / int_2);
+			return (int_1, int_2);
 }
 }
 // ==================================================
