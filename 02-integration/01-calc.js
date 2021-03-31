@@ -36,6 +36,9 @@ function calc(operation, int_1, int_2) {
 
 		case 'divide':
 			return divide(int_1, int_2);
+
+		default:
+			return 'Invalid Operation.Better luck next time'
 }
 }
 // ==================================================
@@ -65,7 +68,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // It should return the correct quotient when the user provides: 'divide', 9, 3.
- 
+  var result = calc('divide', 9, 3);
+  if(result !==3) throw new Error('Expected calc("divide", 9, 3) to be 3. Received: ' + result);
   // --------------------------------------------------
   // Test Case 5
   // --------------------------------------------------
